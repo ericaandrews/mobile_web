@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Products</title>
+<style>
+.nav {
+  position: fixed;
+  text-align: right;
+  top: 0;
+  width: 100%;
+  padding: 5px;    
+}
+.nav a{
+  border: 1px solid #ddd;
+  padding: 5px;  
+  text-decoration: none;    
+}    
+.main{
+ margin-top: 50px;
+ padding: 5px;        
+} 
+@media screen and (max-width: 300px) {
+ header{padding-top: 10px;}
+}    
+</style>    
+</head>
+<body>
+    <div class="nav">   
+        <a href="index.html" class="btn btn-info">Home</a>    
+        <a href="contactus.html" class="btn btn-info">Contact Us</a>
+        <a href="products.html" class="btn btn-info">Products</a>  
+        <a href="location.html" class="btn btn-info">Location</a>  
+    </div> 
+    
+    <div class="main" data-role="content"> 
+        <header data-role="header">
+        <h1>Title</h1>
+        <h3>Subtitle</h3>
+        </header>
+        <h3 style="text-align: center;">Products</h3>
+        <div class="container">
+          <p>Click on the button to toggle between showing and hiding content.</p>
+          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Product</button>
+          <div id="demo" class="collapse">
+            This page shows a list with image and description. This list is collapsible so the viewer can open by tab. The Information icon, located on the tabs, can 
+            provide the viewer with more information.<br><br>   
+                <div class="btn btn-info" data-toggle="collapse" data-target="#demone">Image One<br><br><a href=""><i class="fa fa-info-circle" style=""></i></a></div>
+                <div id="demoone" class="collapse"><img src="" alt="IMAGE ONE"><div>DESCRIPTION</div>
+                </div><br><br>
+
+                <div class="btn btn-info" data-toggle="collapse" data-target="#demotwo">Image Two<br><br><a href=""><i class="fa fa-info-circle" style=""></i></a></div>
+                <div id="demotwo" class="collapse"><img src="" alt="IMAGE TWO"><div>DESCRIPTION</div>
+                </div><br><br>
+
+                <div class="btn btn-info" data-toggle="collapse" data-target="#demothree">Image Three<br><br><a href=""><i class="fa fa-info-circle" style=""></i></a></div>
+                <div id="demothree" class="collapse"><img src="" alt="IMAGE THREE"><div>DESCRIPTION</div>
+                </div><br><br>
+
+                <div class="btn btn-info" data-toggle="collapse" data-target="#demofour">Image Four<br><br><a href=""><i class="fa fa-info-circle" style=""></i></a></div>
+                <div id="demofour" class="collapse"><img src="" alt="IMAGE FOUR"><div>DESCRIPTION</div>
+                </div><br><br>
+
+                <div class="btn btn-info" data-toggle="collapse" data-target="#demofive">Image Five<br><br><a href=""><i class="fa fa-info-circle" style=""></i></a></div>
+                <div id="demofive" class="collapse"><img src="" alt="IMAGE FIVE"><div>DESCRIPTION</div>
+                </div><br><br>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
