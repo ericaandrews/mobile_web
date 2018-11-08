@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Call the Browser With Javascript | Mobile</title>
+<meta charset="utf-8">
+<meta name="" content="">    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+    if(screen.width > 720) {
+        window.location.replace("http://ericaandrews.github.io/mobile_web/desktop.html");
+    }
+</script>     
+<style>
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@media screen and (max-width: 720px) {
+    body{
+    font-size: 1.0em;
+    }    
+}    
+</style>    
+</head>
+<body>
+<!--If screen width is greater than 720 width, refresh if window is greater than 720 width in order for 'desktop.html' to load.     -->    
+<h1>Call the Browser With Javascript</h1><hr> 
+<p>This is the Mobile version!</p>
+<dl>
+    <dt>WURFL Capability: is_mobile</dt>
+    <dd>-an alias for is_wireless_device.</dd>
+    <dd>-true if a device is wireless.</dd>
+    <dd>-specifically a mobile phone or a tablet are considered as wireless devices, but a 'desktop PC' or a 'laptop' are not.</dd>
+    <dt>WURFL Capability: is_phone</dt>
+    <dd>-true if device is a mobile phone.</dd>
+    <dt>WURFL Capability: is_tablet</dt>
+    <dd>-true if a device is a tablet computer &#40;iPad and similar, regardless of OS&#41;.</dd>
+</dl>    
+</body>
+</html>
