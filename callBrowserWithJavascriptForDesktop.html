@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Call the Browser with Javascript | Desktop</title> 
+<meta charset="utf-8">
+<meta name="" content="">
+<script>
+    if(screen.width < 720) {
+        window.location.replace("http://ericaandrews.github.io/mobile_web/mobile.html");
+    }
+</script>    
+</head>
+<body>
+<!--If screen width is greater than 720 width, refresh if window is less than 720 width in order for 'mobile.html' to load.     -->
+<h1>Call the Browser with Javascript</h1><hr> 
+<p>This is the desktop version!</p>
+<dl>
+    <dt>WURFL Capability: is_wireless_device</dt>
+    <dd>-comes with three possible values: true, false, NULL</dd>
+    <dd>-capability will be set to false if it's a laptop even if the laptop has wireless network card.</dd>
+    <dt>WURFL Capability: has_cellular_radio</dt>
+    <dd>-capability from a group called bearer</dd>
+    <dd>-shows if the request is coming from a mobile device with phone capability or not</dd>
+    <dd>-capability tested to decide if the "panic button" would be shown to the user or not</dd>
+    <dt>WURFL Capability: can_assign_phone_number</dt>
+    <dd>-capability(true or false)</dd>
+    <dd>-showing its a mobile phone and MAY have a phone number associated to it.</dd>
+</dl>    
+</body>
+<!--CNIT 133M    -->
+</html>
